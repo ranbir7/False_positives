@@ -1,0 +1,25 @@
+name: pdfreaderapp
+description: A disciplined PDF reader app
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  file_picker: ^6.1.1
+  syncfusion_flutter_pdfviewer: ^23.1.42
+  shared_preferences: ^2.2.2
+  flutter_local_notifications: ^15.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
