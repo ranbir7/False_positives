@@ -7,12 +7,12 @@
 static void *thread_fn_callback(void *arg)
 {
     char *input = (char *)arg;
-    printf("%s is running\n", input);
+    // printf("%s is running\n", input);
 
     while (1)
     {
 
-        printf("%s is still running\n", input);
+        printf(" and  input string is = %s \n", input);
         sleep(1); // Sleep for 1 second
     }
 }
@@ -20,7 +20,7 @@ static void *thread_fn_callback(void *arg)
 void thread1_create()
 {
     pthread_t pthread1;
-    static char *thread1_name = "HELLO Thread 1";
+    static char *thread1_name = "wtf Thread 1";
     int rc = pthread_create(&pthread1,
                             NULL,
                             thread_fn_callback,
